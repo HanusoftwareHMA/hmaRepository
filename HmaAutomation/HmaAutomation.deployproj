@@ -36,6 +36,10 @@
     <None Include="Templates\Rakesh\azuredeploy.parameters.json" />
     <None Include="Templates\Rakesh\metadata.json" />
     <None Include="Templates\Rakesh\README.md" />
+    <None Include="Templates\Sanjeev\azuredeploy.json" />
+    <None Include="Templates\Sanjeev\azuredeploy.parameters.json" />
+    <None Include="Templates\Sanjeev\metadata.json" />
+    <None Include="Templates\Sanjeev\README.md.txt" />
     <None Include="Templates\Vikram\azuredeploy.json" />
     <None Include="Templates\Vikram\azuredeploy.parameters.json" />
     <None Include="Templates\Vikram\metadata.json" />
