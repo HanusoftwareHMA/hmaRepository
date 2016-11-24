@@ -2,7 +2,7 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
   "parameters": {
-    "VmName": {
+    "vmName": {
       "type": "string",
       "metadata": {
         "description": "Virtual machine name that is to be bachedup"
@@ -85,8 +85,7 @@
       {
         "type": "Microsoft.RecoveryServices/vaults",
         "apiVersion": "2015-11-10",
-        "name": "[concat(parameters('vaultName'),'/', parameters('VmName'))]",
-        //"name": "[concat(parameters('existingRecoveryServicesVaultName'), '/', variables('backupFabric'), '/', parameters('existingProtectionContainers')[copyIndex()], '/', parameters('existingProtectableItems')[copyIndex()])]",
+        "name": "[concat(parameters('vaultName'),'/', parameters('vmName'))]",
         "location": "[resourceGroup().location]",
         "sku": {
           "name": "RS0",
