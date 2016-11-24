@@ -6,10 +6,10 @@
       "value": "VMforBackup"
     },
     "vaultName": {
-      "value": "RSvault1"
+      "value": "RSvault3"
     },
     "policyName": {
-      "value": "WeeklyBackupPolicy1"
+      "value": "WeeklyBackupPolicy3"
     },
     "scheduleRunDays": {
       "value": [ "Sunday", "Tuesday", "Thursday" ]
