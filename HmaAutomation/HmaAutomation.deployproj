@@ -26,6 +26,7 @@
   <!-- vertag<:>end -->
   <ItemGroup>
     <Folder Include="Scripts\" />
+    <Folder Include="Templates\Amit\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Deployment.targets">

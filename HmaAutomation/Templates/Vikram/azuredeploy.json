@@ -48,7 +48,7 @@
       }
     },
 
-        {
+      {
           "name": "[concat(parameters('VaultName'), '/', parameters('registeredContainers')[copyIndex()], '/', parameters('registeredContainers')[copyIndex()])]",
           "apiVersion": "2015-03-15",
           "type": "Microsoft.Backup/BackupVault/registeredContainers/protectedItems",
