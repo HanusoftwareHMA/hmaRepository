@@ -9,20 +9,13 @@
     //  "value": "DevVault03"
     //},
     "existingProtectionContainers": {
-      "value": [
-        "iaasvmcontainer;iaasvmcontainerv2;HmaOnAzurePOC-Dev;DevVM01"
-      ]
+      "value": ["iaasvmcontainer;iaasvmcontainerv2;HmaOnAzurePOC-Dev;DevVM01"]
     },
     "existingProtectableItems": {
-      "value": [
-        "vm;iaasvmcontainerv2;HmaOnAzurePOC-Dev;DevVM01"
-      ]
+      "value": ["vm;iaasvmcontainerv2;HmaOnAzurePOC-Dev;DevVM01"]
     },
     "existingSourceResourceIds": {
-      "value": [
-        "/subscriptions/63bb76f1-828b-4a86-8d02-89d0c75c56f2/resourceGroups/HmaOnAzurePOC-Dev/providers/Microsoft.Compute/virtualMachines/DevVM01"
-        //"/subscriptions/63bb76f1-828b-4a86-8d02-89d0c75c56f2/resourceGroups/vsarmtempdemo/providers/Microsoft.Compute/virtualMachines/DevVM05"
-      ]
+      "value": ["/subscriptions/63bb76f1-828b-4a86-8d02-89d0c75c56f2/resourceGroups/HmaOnAzurePOC-Dev/providers/Microsoft.Compute/virtualMachines/DevVM01"]
     },
     //"existingBackupPolicyName": {
     //  "value": "DevVault03BackupPolicy"
@@ -31,31 +24,31 @@
       "value": "WeeklyBackupPolicy5"
     },
     "scheduleRunDays": {
-      "value": [ "Sunday", "Tuesday", "Thursday" ]
+      "value": ["Sunday", "Tuesday", "Thursday"]
     },
     "scheduleRunTimes": {
-      "value": [ "2016-09-21T05:30:00Z" ]
+      "value": ["2016-09-21T05:30:00Z"]
     },
     "weeklyRetentionDurationCount": {
       "value": 104
     },
     "daysOfTheWeekForMontlyRetention": {
-      "value": [ "Sunday", "Tuesday" ]
+      "value": ["Sunday", "Tuesday"]
     },
     "weeksOfTheMonthForMonthlyRetention": {
-      "value": [ "First", "Third" ]
+      "value": ["First", "Third"]
     },
     "monthlyRetentionDurationCount": {
       "value": 60
     },
     "monthsOfYear": {
-      "value": [ "January", "March", "August" ]
+      "value": ["January", "March", "August"]
     },
     "daysOfTheWeekForYearlyRetention": {
-      "value": [ "Sunday", "Tuesday" ]
+      "value": ["Sunday", "Tuesday"]
     },
     "weeksOfTheMonthForYearlyRetention": {
-      "value": [ "First", "Third" ]
+      "value": ["First", "Third"]
     },
     "yearlyRetentionDurationCount": {
       "value": 10
