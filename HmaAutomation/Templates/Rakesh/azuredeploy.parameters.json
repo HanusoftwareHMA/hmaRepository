@@ -5,9 +5,7 @@
     "vaultName": {
       "value": "RSvault5"
     },
-    //"existingRecoveryServicesVaultName": {
-    //  "value": "DevVault03"
-    //},
+    
     "existingProtectionContainers": {
       "value": ["iaasvmcontainer;iaasvmcontainerv2;HmaOnAzurePOC-Dev;DevVM01"]
     },
@@ -17,9 +15,7 @@
     "existingSourceResourceIds": {
       "value": ["/subscriptions/63bb76f1-828b-4a86-8d02-89d0c75c56f2/resourceGroups/HmaOnAzurePOC-Dev/providers/Microsoft.Compute/virtualMachines/DevVM01"]
     },
-    //"existingBackupPolicyName": {
-    //  "value": "DevVault03BackupPolicy"
-    //}
+     
     "policyName": {
       "value": "WeeklyBackupPolicy5"
     },
