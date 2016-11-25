@@ -1,6 +1,6 @@
 # Backup ARM and Classic IaaSVMs to Recovery Services Vault
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgitrakesh%2FRecoveryServicesTemplate%2Fmaster%2FRecoveryServicesTemplate%2FTemplates%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgitrakesh%2FRSVaultAutomate%2Fmaster%2FRSVaultAutomate%2FTemplates%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 

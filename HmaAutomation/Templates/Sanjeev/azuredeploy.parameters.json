@@ -2,14 +2,14 @@
   "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "vmName": {
-      "value": "VMforBackup"
+    "VirtualMacineName": {
+      "value": ""
     },
     "vaultName": {
-      "value": "RSvault3"
+      "value": "RSvault1"
     },
     "policyName": {
-      "value": "WeeklyBackupPolicy3"
+      "value": "WeeklyBackupPolicy1"
     },
     "scheduleRunDays": {
       "value": [ "Sunday", "Tuesday", "Thursday" ]
