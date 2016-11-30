@@ -3,16 +3,11 @@
   "version": "0.0.1-preview",
   "parameters": {
     "basics": [{
-      "name": "DKSoni",
-      "label": "DKSoni",
-      "bladeTitle": "Dk Soni",
-      "elements": [{
-      "name": "adminUsername",
+            "name": "adminUsername",
       "type": "Microsoft.Compute.UserNameTextBox",
       "label": "Username",
       "toolTip": "Admin username for the virtual machines.",
       "osPlatform": "Windows"
-    }]
    }],
     "outputs": {
       "location": "[location()]",
