@@ -13,7 +13,7 @@
       "toolTip": "Admin username for the virtual machines.",
       "osPlatform": "Windows"
     }]
-   }]
+   }],
     "outputs": {
       "location": "[location()]",
       "adminUsername": "[basics('adminUsername')]",
