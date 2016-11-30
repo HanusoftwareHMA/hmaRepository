@@ -44,6 +44,7 @@
     <None Include="Templates\Vikram\metadata.json" />
     <None Include="Templates\Vikram\README.md" />
     <None Include="Templates\Vikram\UI\createUiDefinition.json" />
+    <None Include="Templates\Vikram\UI\mainTemplate.json" />
     <None Include="Templates\Vikram\UI\README.md" />
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
