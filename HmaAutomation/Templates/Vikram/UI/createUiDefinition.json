@@ -67,7 +67,7 @@
         "name": "Customer",
         "label": "Customer Information",
         "subLabel": {
-          "preValidation": "Customer Information",
+          "preValidation": "Customer",
           "postValidation": "Done"
         },
         "bladeTitle": "Size",
