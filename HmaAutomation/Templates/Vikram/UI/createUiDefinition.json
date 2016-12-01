@@ -6,9 +6,9 @@
       {
         "name": "adminUsername",
         "type": "Microsoft.Compute.UserNameTextBox",
-        "label": "Customer Name",
-        "toolTip": "Enter Customer Name.",
-        "osPlatform": "Linux",
+        "label": "Virtual Machine Name",
+        "toolTip": "Enter Existing VM Name.",
+        "osPlatform": "Windows",
         "constraints": {
           "required": true,
           "regex": "^[a-z][-a-z0-9]*$"
