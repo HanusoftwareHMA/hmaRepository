@@ -65,9 +65,9 @@
     "steps": [
       {
         "name": "Customer",
-        "label": "Customer Information",
+        "label": "Customer",
         "subLabel": {
-          "preValidation": "Customer",
+          "preValidation": "Customer Information",
           "postValidation": "Done"
         },
         "bladeTitle": "Size",
