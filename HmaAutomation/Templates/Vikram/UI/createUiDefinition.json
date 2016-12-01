@@ -6,15 +6,15 @@
       {
         "name": "adminUsername",
         "type": "Microsoft.Compute.UserNameTextBox",
-        "label": "Customer Name",
-        "toolTip": "Administrative username for the virtual machines.",
-        "osPlatform": "Linux",
+        "label": "Virtual Machine Name",
+        "toolTip": "Enter Existing VM Name.",
+        "osPlatform": "Windows",
         "constraints": {
           "required": true,
           "regex": "^[a-z][-a-z0-9]*$"
         }
       }
-  
+
     ],
     "steps": [
       {
@@ -27,20 +27,15 @@
         "bladeTitle": "Customer",
         "elements": [
           {
-            "name": "vmSize",
-            "type": "Microsoft.Compute.SizeSelector",
-            "label": "VM size",
-            "toolTip": "The size of virtual machines.",
-            "recommendedSizes": [
-              "Standard_A2",
-              "Standard_A3",
-              "Standard_A4"
-            ],
-            "osPlatform": "Linux",
-            "imageReference": {
-              "publisher": "cloudbees",
-              "offer": "jenkins-enterprise",
-              "sku": "jenkins-enterprise"
+            "name": "webSiteName",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Web site name .azurewebsites.net",
+            "toolTip": "Full url will be web_site_name.azurewebsites.net, must be unique",
+            "defaultValue": "change_me_to_be_unique",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           }
         ]
