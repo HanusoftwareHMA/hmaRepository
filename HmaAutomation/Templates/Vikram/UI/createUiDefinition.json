@@ -65,7 +65,7 @@
     "steps": [
       {
         "name": "Customer",
-        "label": "Enter Customer Information",
+        "label": "Customer",
         "subLabel": {
           "preValidation": "Enter Customer Information",
           "postValidation": "Done"
