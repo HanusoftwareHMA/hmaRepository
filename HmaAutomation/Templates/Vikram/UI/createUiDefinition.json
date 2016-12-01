@@ -29,11 +29,11 @@
           {
             "name": "CustomerName",
             "type": "Microsoft.Common.TextBox",
-            "label": "Customer Full Name",
+            "label": "Customer Name",
             "toolTip": "Enter Customer Full Name. Ex. Vikram Pal Singh",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -41,11 +41,11 @@
           {
             "name": "CompanyName",
             "type": "Microsoft.Common.TextBox",
-            "label": "Company Full Name",
-            "toolTip": "Enter Customer Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
+            "label": "Company Name",
+            "toolTip": "Enter Company Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -57,7 +57,7 @@
             "toolTip": "Enter your website full URL that is accessible",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -69,9 +69,9 @@
             "toolTip": "Enter Your Email Address.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
-              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
-              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+              "required": false,
+              "regex": "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/",
+              "validationMessage": "Enter Email In Proper Format."
             }
           },
           {
@@ -81,7 +81,7 @@
             "toolTip": "Enter Your Contact Number.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -93,7 +93,7 @@
             "toolTip": "Enter Your Full Address.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -105,7 +105,7 @@
             "toolTip": "Enter Your Country Name.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -117,7 +117,7 @@
             "toolTip": "Enter Your State Name.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -129,7 +129,7 @@
             "toolTip": "Enter Your City Name.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -141,7 +141,7 @@
             "toolTip": "Enter Your Zipcode.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -153,9 +153,7 @@
             "toolTip": "Enter Remarks.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
-              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
-              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+              "required": false 
             }
           }
         ]
