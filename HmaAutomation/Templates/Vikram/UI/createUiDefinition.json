@@ -65,7 +65,7 @@
     "steps": [
       {
         "name": "size",
-        "label": "Size",
+        "label": "Customer",
         "subLabel": {
           "preValidation": "Choose virtual machine size",
           "postValidation": "Done"
