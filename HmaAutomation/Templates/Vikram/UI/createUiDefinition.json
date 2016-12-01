@@ -64,10 +64,10 @@
     ],
     "steps": [
       {
-        "name": "size",
+        "name": "Customer",
         "label": "Customer",
         "subLabel": {
-          "preValidation": "Choose edrfsedgfttsdg virtual machine size",
+          "preValidation": "Customer",
           "postValidation": "Done"
         },
         "bladeTitle": "Size",
