@@ -153,88 +153,108 @@
             "toolTip": "Enter Remarks.",
             "defaultValue": "",
             "constraints": {
-              "required": false 
+              "required": false
             }
           }
         ]
       },
+
+
       {
-        "name": "security",
-        "label": "Security",
+        "name": "Services",
+        "label": "Services",
         "subLabel": {
-          "preValidation": "Required",
+          "preValidation": "Choose Hanu HMA Services",
           "postValidation": "Done"
         },
-        "bladeTitle": "Security",
+        "bladeTitle": "HMA Services",
         "elements": [
           {
-            "name": "jenkinsAdminPassword",
-            "type": "Microsoft.Common.PasswordBox",
-            "label": {
-              "password": "Jenkins administrator password",
-              "confirmPassword": "Confirm password"
-            },
-            "toolTip": "Password for the 'admin' user on Jenkins for initial security setup.",
+            "name": "Vault",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Vault Name",
+            "toolTip": "Enter Vault Name.",
+            "defaultValue": "",
             "constraints": {
-              "required": true
-            }
-          }
-        ]
-      },
-      {
-        "name": "deploymentDetails",
-        "label": "Deployment Parameters",
-        "subLabel": {
-          "preValidation": "Required",
-          "postValidation": "Done"
-        },
-        "bladeTitle": "Deployment Parameters",
-        "elements": [
-          {
-            "name": "publicIP",
-            "type": "Microsoft.Network.PublicIpAddressCombo",
-            "label": {
-              "publicIpAddress": "Public IP address",
-              "domainNameLabel": "CloudBees Jenkins Operations Center domain name"
-            },
-            "toolTip": {
-              "domainNameLabel": "Your CloudBees Jenkins Operation Center instance will be available as http://{domain}.{location}.cloudapp.azure.com. Your CloudBees Jenkins Enterprise instances will be available as http://{domain}-{n}.{location}.cloudapp.azure.com."
-            },
-            "constraints": {
-              "required": {
-                "domainNameLabel": true
-              }
-            },
-            "defaultValue": {
-              "publicIpAddress": "publicIP"
-            },
-            "options": {
-              "hideNone": true,
-              "hideDomainNameLabel": false,
-              "hideExisting": true
+              "required": false,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           },
           {
-            "name": "storageAccount",
-            "type": "Microsoft.Storage.StorageAccountSelector",
-            "label": "Storage account",
-            "toolTip": "Storage Account for the Virtual Machine's Disks",
-            "defaultValue": {
-              "type": "Standard_LRS"
-            },
+            "name": "Policy",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Policy Name",
+            "toolTip": "Enter Policy Name.",
+            "defaultValue": "",
             "constraints": {
-              "allowedTypes": [
-                "Standard_LRS",
-                "Standard_GRS"
-              ],
-              "required": true
-            },
-            "options": {
-              "hideExisting": true
+              "required": false,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "patch",
+            "type": "Microsoft.Common.DropDown",
+            "label": "Window Patching",
+            "toolTip": "",
+            "defaultValue": "Yes",
+            "constraints": {
+              "allowedValues": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Monitoring",
+            "type": "Microsoft.Common.DropDown",
+            "label": "VM Monitoring",
+            "defaultValue": "Yes",
+            "constraints": {
+              "allowedValues": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                } 
+              ]
+            }
+          },
+          {
+            "name": "Backup",
+            "type": "Microsoft.Common.DropDown",
+            "label": "Backup",
+            "toolTip": "",
+
+            "defaultValue": "Yes",
+            "constraints": {
+              "allowedValues": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                } 
+              ]
             }
           }
         ]
       }
+
+
+
     ],
     "outputs": {
       "storageAccountName": "[steps('deploymentDetails').storageAccount.name]",
