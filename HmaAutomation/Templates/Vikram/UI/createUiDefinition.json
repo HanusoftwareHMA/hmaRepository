@@ -70,7 +70,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/",
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Enter Email In Proper Format."
             }
           },
