@@ -226,7 +226,7 @@
                 {
                   "label": "No",
                   "value": "No"
-                } 
+                }
               ]
             }
           },
@@ -246,7 +246,7 @@
                 {
                   "label": "No",
                   "value": "No"
-                } 
+                }
               ]
             }
           }
@@ -257,7 +257,8 @@
 
     ],
     "outputs": {
-      "Customer": "[steps('Customer').CustomerName]"
+      "storageAccountName": "[steps('Customer').CustomerName]",
+      "location": "[location()]"
     }
   }
 }
