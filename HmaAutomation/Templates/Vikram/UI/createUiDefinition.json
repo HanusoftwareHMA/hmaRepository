@@ -257,23 +257,7 @@
 
     ],
     "outputs": {
-      "storageAccountName": "[steps('deploymentDetails').storageAccount.name]",
-      "storageAccountType": "[steps('deploymentDetails').storageAccount.type]",
-
-      "publicIPNewOrExisting": "[steps('deploymentDetails').publicIP.newOrExistingOrNone]",
-      "publicIPName": "[steps('deploymentDetails').publicIP.name]",
-      "dnsNameForPublicIP": "[steps('deploymentDetails').publicIP.domainNameLabel]",
-
-      "adminUsername": "[basics('adminUsername')]",
-      "authenticationType": "[basics('adminCredentials').authenticationType]",
-      "adminPassword": "[basics('adminCredentials').password]",
-      "sshPublicKey": "[basics('adminCredentials').sshPublicKey]",
-
-      "size": "[basics('size')]",
-      "vmSize": "[steps('size').vmSize]",
-      "jenkinsAdminPassword": "[steps('security').jenkinsAdminPassword]",
-
-      "location": "[location()]"
+       
     }
   }
 }
