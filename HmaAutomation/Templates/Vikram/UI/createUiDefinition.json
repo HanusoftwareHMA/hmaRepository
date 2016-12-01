@@ -29,9 +29,21 @@
           {
             "name": "CustomerName",
             "type": "Microsoft.Common.TextBox",
-            "label": "Enter Customer Name",
+            "label": "Customer Full Name",
             "toolTip": "Enter Customer Full Name. Ex. Vikram Pal Singh",
-            "defaultValue": "Amit",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "CompanyName",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Company Full Name",
+            "toolTip": "Enter Customer Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
+            "defaultValue": "",
             "constraints": {
               "required": true,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
@@ -43,7 +55,103 @@
             "type": "Microsoft.Common.TextBox",
             "label": "Enter Website URL",
             "toolTip": "Enter your website full URL that is accessible",
-            "defaultValue": "www.hanusoftware.com",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "EmailID",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Email Address",
+            "toolTip": "Enter Your Email Address.",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "ContactNo",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Contact Number",
+            "toolTip": "Enter Your Contact Number.",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "Address",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Address",
+            "toolTip": "Enter Your Full Address.",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "Country",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Country",
+            "toolTip": "Enter Your Country Name.",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "State",
+            "type": "Microsoft.Common.TextBox",
+            "label": "State",
+            "toolTip": "Enter Your State Name.",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "City",
+            "type": "Microsoft.Common.TextBox",
+            "label": "City",
+            "toolTip": "Enter Your City Name.",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "Zipcode",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Zipcode",
+            "toolTip": "Enter Your Zipcode.",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
+            "name": "Remark",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Remarks",
+            "toolTip": "Enter Remarks.",
+            "defaultValue": "",
             "constraints": {
               "required": true,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
