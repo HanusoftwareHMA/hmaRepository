@@ -272,9 +272,9 @@
 
       "Vault": "[steps('Services').Vault]",
       "Policy": "[steps('Services').Policy]",
-      "patch": "[steps('Services').patch]",
-      "Monitoring": "[steps('Services').Monitoring]",
-      "Backup": "[steps('Services').Backup]",
+      //"patch": "[steps('Services').patch]",
+      //"Monitoring": "[steps('Services').Monitoring]",
+      //"Backup": "[steps('Services').Backup]",
       "location": "[location()]"
     }
   }
