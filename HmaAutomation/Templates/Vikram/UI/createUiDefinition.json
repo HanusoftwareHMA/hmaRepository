@@ -27,11 +27,23 @@
         "bladeTitle": "Customer",
         "elements": [
           {
+            "name": "CustomerName",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Enter Customer Name",
+            "toolTip": "Enter Customer Full Name. Ex. Vikram Pal Singh",
+            "defaultValue": "Amit",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+            }
+          },
+          {
             "name": "webSiteName",
             "type": "Microsoft.Common.TextBox",
-            "label": "Web site name .azurewebsites.net",
-            "toolTip": "Full url will be web_site_name.azurewebsites.net, must be unique",
-            "defaultValue": "change_me_to_be_unique",
+            "label": "Enter Website URL",
+            "toolTip": "Enter your website full URL that is accessible",
+            "defaultValue": "www.hanusoftware.com",
             "constraints": {
               "required": true,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
