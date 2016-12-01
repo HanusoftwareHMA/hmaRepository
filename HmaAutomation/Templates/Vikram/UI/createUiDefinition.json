@@ -4,15 +4,9 @@
   "parameters": {
     "basics": [
       {
-        "name": "size",
-        "type": "Microsoft.Common.UserNameTextBox",
-        "label": "Deployment size" 
-
-      },
-      {
         "name": "adminUsername",
         "type": "Microsoft.Compute.UserNameTextBox",
-        "label": "VM username",
+        "label": "Customer Name",
         "toolTip": "Administrative username for the virtual machines.",
         "osPlatform": "Linux",
         "constraints": {
