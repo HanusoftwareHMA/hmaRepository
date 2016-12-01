@@ -257,8 +257,7 @@
 
     ],
     "outputs": {
-
-      "location": "[location()]"
+      "Customer": "[steps('Customer').CustomerName]"
     }
   }
 }
