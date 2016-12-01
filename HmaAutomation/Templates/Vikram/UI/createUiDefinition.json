@@ -257,7 +257,8 @@
 
     ],
     "outputs": {
-      "storageAccountName": "[steps('Customer').CustomerName]",
+      "VMName": "[basics('VMName')]",
+      "CustomerName": "[steps('Customer').CustomerName]",
       "location": "[location()]"
     }
   }
