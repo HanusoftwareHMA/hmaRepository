@@ -4,8 +4,8 @@
   "parameters": {
     "basics": [
       {
-        "name": "adminUsername",
-        "type": "Microsoft.Compute.UserNameTextBox",
+        "name": "VMName",
+        "type": "Microsoft.Common.TextBox",
         "label": "Virtual Machine Name",
         "toolTip": "Enter Existing VM Name.",
         "osPlatform": "Windows",
@@ -257,7 +257,24 @@
 
     ],
     "outputs": {
-      "storageAccountName": "[steps('Customer').CustomerName]",
+      "VMName": "[steps('VMName').VMName]",
+      "Customer": "[steps('Customer').CustomerName]",
+      "CompanyName": "[steps('Customer').CompanyName]",
+      "webSiteName": "[steps('Customer').webSiteName]",
+      "EmailID": "[steps('Customer').EmailID]",
+      "ContactNo": "[steps('Customer').ContactNo]",
+      "Address": "[steps('Customer').Address]",
+      "Country": "[steps('Customer').Country]",
+      "State": "[steps('Customer').State]",
+      "City": "[steps('Customer').City]",
+      "Zipcode": "[steps('Customer').Zipcode]",
+      "Remark": "[steps('Customer').Remark]",
+
+      "Vault": "[steps('Services').Vault]",
+      "Policy": "[steps('Services').Policy]",
+      "patch": "[steps('Services').patch]",
+      "Monitoring": "[steps('Services').Monitoring]",
+      "Backup": "[steps('Services').Backup]",
       "location": "[location()]"
     }
   }
