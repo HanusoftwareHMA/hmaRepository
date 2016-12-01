@@ -6,8 +6,7 @@
       {
         "name": "size",
         "type": "Microsoft.Common.UserNameTextBox",
-        "label": "Deployment size",
-        "defaultValue": "Starter"
+        "label": "Deployment size" 
 
       },
       {
