@@ -257,7 +257,7 @@
 
     ],
     "outputs": {
-      "VMName": "[steps('VMName').VMName]",
+      "VMName": "[basics('VMName').VMName]",
       "Customer": "[steps('Customer').CustomerName]",
       "CompanyName": "[steps('Customer').CompanyName]",
       "webSiteName": "[steps('Customer').webSiteName]",
@@ -270,8 +270,8 @@
       "Zipcode": "[steps('Customer').Zipcode]",
       "Remark": "[steps('Customer').Remark]",
 
-      "Vault": "[steps('Customer').Vault]",
-      "Policy": "[steps('Customer').Policy]",
+      "Vault": "[steps('Services').Vault]",
+      "Policy": "[steps('Services').Policy]",
       //"patch": "[steps('Services').patch]",
       //"Monitoring": "[steps('Services').Monitoring]",
       //"Backup": "[steps('Services').Backup]",
