@@ -70,7 +70,7 @@
           "preValidation": "Customer Information",
           "postValidation": "Done"
         },
-        "bladeTitle": "Size",
+        "bladeTitle": "Customer",
         "elements": [
           {
             "name": "vmSize",
