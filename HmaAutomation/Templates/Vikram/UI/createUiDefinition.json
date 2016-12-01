@@ -29,11 +29,11 @@
           {
             "name": "vmSize",
             "type": "Microsoft.Compute.UserNameTextBox",
-            "label": {
-              "customerName": "Customer Name"
-             
-            },
-            "toolTip": "The size of virtual machines."
+             "label": "Customer",
+            "toolTip": "Enter Customer Name.",
+             "constraints": {
+              "required": true
+            }
             
       },
       {
