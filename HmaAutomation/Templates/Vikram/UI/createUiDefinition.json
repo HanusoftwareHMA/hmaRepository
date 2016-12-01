@@ -270,8 +270,8 @@
       "Zipcode": "[steps('Customer').Zipcode]",
       "Remark": "[steps('Customer').Remark]",
 
-      "Vault": "[steps('Services').Vault]",
-      "Policy": "[steps('Services').Policy]",
+      "Vault": "[steps('Customer').Vault]",
+      "Policy": "[steps('Customer').Policy]",
       //"patch": "[steps('Services').patch]",
       //"Monitoring": "[steps('Services').Monitoring]",
       //"Backup": "[steps('Services').Backup]",
