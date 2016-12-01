@@ -7,7 +7,7 @@
         "name": "adminUsername",
         "type": "Microsoft.Compute.UserNameTextBox",
         "label": "Customer Name",
-        "toolTip": "Administrative username for the virtual machines.",
+        "toolTip": "Enter Customer Name.",
         "osPlatform": "Linux",
         "constraints": {
           "required": true,
