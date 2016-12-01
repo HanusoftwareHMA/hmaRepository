@@ -25,7 +25,7 @@
           "postValidation": "Done"
         },
         "bladeTitle": "Customer",
-         "elements": [
+         "basics": [
           {
             "name": "vmSize",
             "type": "Microsoft.Compute.UserNameTextBox",
