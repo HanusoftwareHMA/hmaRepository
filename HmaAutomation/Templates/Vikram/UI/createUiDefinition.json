@@ -11,7 +11,7 @@
         "constraints": {
           "allowedValues": [
             {
-              "label": "SoloVikram (1 master, 1 executor : $0.25/hr + VM cost)",
+              "label": "Solo (1 master, 1 executor : $0.25/hr + VM cost)",
               "value": "Solo"
             },
             {
