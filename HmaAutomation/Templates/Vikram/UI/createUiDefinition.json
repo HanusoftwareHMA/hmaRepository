@@ -14,7 +14,7 @@
           "regex": "^[a-z][-a-z0-9]*$"
         }
       }
-  
+
     ],
     "steps": [
       {
@@ -25,19 +25,19 @@
           "postValidation": "Done"
         },
         "bladeTitle": "Customer",
-         "elements": [
+        "elements": [
           {
-                "name": "webSiteName",
-                "type": "Microsoft.Common.TextBox",
-                "label": "Web site name .azurewebsites.net",
-                "toolTip": "Full url will be web_site_name.azurewebsites.net, must be unique",
-                "defaultValue": "change_me_to_be_unique",
-                "constraints": {
-                    "required": true,
-                    "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
-                    "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
-                }
+            "name": "webSiteName",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Web site name .azurewebsites.net",
+            "toolTip": "Full url will be web_site_name.azurewebsites.net, must be unique",
+            "defaultValue": "change_me_to_be_unique",
+            "constraints": {
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
+          }
         ]
       },
       {
