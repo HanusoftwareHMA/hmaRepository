@@ -64,10 +64,10 @@
     ],
     "steps": [
       {
-        "name": "Customer",
-        "label": "Customer",
+        "name": "size",
+        "label": "Size",
         "subLabel": {
-          "preValidation": "Enter Customer Information",
+          "preValidation": "Choose virtual machine size",
           "postValidation": "Done"
         },
         "bladeTitle": "Size",
