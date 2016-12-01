@@ -257,7 +257,8 @@
 
     ],
     "outputs": {
-       
+      "storageAccountName": "[steps('Customer').CustomerName]",
+      "location": "[location()]"
     }
   }
 }
