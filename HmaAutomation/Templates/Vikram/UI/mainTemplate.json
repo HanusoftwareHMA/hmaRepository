@@ -101,7 +101,7 @@
         "Pro"
       ],
       "metadata": {
-          "description": "Size of your CloudBees Jenkins Platform deployment."
+        "description": "Size of your CloudBees Jenkins Platform deployment."
       }
     }
   },
@@ -109,7 +109,7 @@
 
   "variables": {
     "location": "[parameters('location')]",
-    "subscription" : "[subscription().subscriptionId]",
+    "subscription": "[subscription().subscriptionId]",
 
     "clusterSpecSolo": {
       "numberOfMasters": 1,
@@ -146,7 +146,7 @@
     "mastersCount": "[variables('clusterSpec').numberOfMasters]",
     "executorsCount": "[variables('clusterSpec').numberOfExecutors]",
     "sku": "[variables('clusterSpec').vmImageSku]",
-    "mastersProperty" :  "[concat('com.cloudbees.jenkins.plugin.marketplace.azure.AzureMarketplace.masters=',variables('mastersCount'))]",
+    "mastersProperty": "[concat('com.cloudbees.jenkins.plugin.marketplace.azure.AzureMarketplace.masters=',variables('mastersCount'))]",
     "executorsProperty": "[concat('com.cloudbees.jenkins.plugin.marketplace.azure.AzureMarketplace.executors=',variables('executorsCount'))]",
 
     "sshKeyPath": "[concat('/home/', parameters('adminUsername'), '/.ssh/authorized_keys')]",
@@ -161,7 +161,7 @@
         ]
       }
     },
-    "linuxConfiguration_password": {},
+    "linuxConfiguration_password": { },
     "linuxConfiguration": "[variables(concat('linuxConfiguration_', parameters('authenticationType')))]"
   },
 
@@ -183,7 +183,7 @@
             "value": "[parameters('storageAccountName')]"
           },
           "storageAccountType": {
-            "value" : "[parameters('storageAccountType')]"
+            "value": "[parameters('storageAccountType')]"
           },
           "location": {
             "value": "[variables('location')]"
