@@ -3,24 +3,18 @@
   "version": "0.0.1-preview",
   "parameters": {
     "basics": [
-      
       {
-        "name": "adminCredentials",
-        "type": "Microsoft.Compute.CredentialsCombo",
-        "label": {
-          "authenticationType": "Authentication type",
-          "password": "Password",
-          "confirmPassword": "Confirm password",
-          "sshPublicKey": "SSH public key"
-        },
+        "name": "adminUsername",
+        "type": "Microsoft.Compute.UserNameTextBox",
+        "label": "Customer Name",
+        "toolTip": "Administrative username for the virtual machines.",
+        "osPlatform": "Linux",
         "constraints": {
-          "required": true
-        },
-        "options": {
-          "hideConfirmation": false
-        },
-        "osPlatform": "Linux"
+          "required": true,
+          "regex": "^[a-z][-a-z0-9]*$"
+        }
       }
+  
     ],
     "steps": [
       {
