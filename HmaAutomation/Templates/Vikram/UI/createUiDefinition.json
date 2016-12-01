@@ -259,6 +259,16 @@
     "outputs": {
       "VMName": "[basics('VMName')]",
       "CustomerName": "[steps('Customer').CustomerName]",
+      "CompanyName": "[steps('Customer').CompanyName]",
+      "webSiteName": "[steps('Customer').webSiteName]",
+      "EmailID": "[steps('Customer').EmailID]",
+      "ContactNo": "[steps('Customer').ContactNo]",
+      "Address": "[steps('Customer').Address]",
+      "Country": "[steps('Customer').Country]",
+      "State": "[steps('Customer').State]",
+      "City": "[steps('Customer').City]",
+      "Zipcode": "[steps('Customer').Zipcode]",
+      "Remark": "[steps('Customer').Remark]",
       "location": "[location()]"
     }
   }
