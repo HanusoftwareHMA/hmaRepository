@@ -28,22 +28,10 @@
          "elements": [
           {
             "name": "vmSize",
-            "type": "Microsoft.Compute.SizeSelector",
+            "type": "Microsoft.Compute.UserNameTextBox",
             "label": "VM size",
-            "toolTip": "The size of virtual machines.",
-            "recommendedSizes": [
-              "Standard_A2",
-              "Standard_A3",
-              "Standard_A4"
-            ],
-            "osPlatform": "Linux",
-            "imageReference": {
-              "publisher": "cloudbees",
-              "offer": "jenkins-enterprise",
-              "sku": "jenkins-enterprise"
-            }
-          }
-        ]
+            "toolTip": "The size of virtual machines."
+            
       },
       {
         "name": "security",
