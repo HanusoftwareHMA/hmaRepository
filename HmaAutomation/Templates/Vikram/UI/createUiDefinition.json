@@ -170,6 +170,26 @@
         "bladeTitle": "HMA Services",
         "elements": [
           {
+            "name": "Backup",
+            "type": "Microsoft.Common.DropDown",
+            "label": "Backup",
+            "toolTip": "",
+
+            "defaultValue": "Yes",
+            "constraints": {
+              "allowedValues": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ]
+            }
+          },
+          {
             "name": "Vault",
             "type": "Microsoft.Common.TextBox",
             "label": "Vault Name",
@@ -216,26 +236,6 @@
             "name": "Monitoring",
             "type": "Microsoft.Common.DropDown",
             "label": "VM Monitoring",
-            "defaultValue": "Yes",
-            "constraints": {
-              "allowedValues": [
-                {
-                  "label": "Yes",
-                  "value": "Yes"
-                },
-                {
-                  "label": "No",
-                  "value": "No"
-                }
-              ]
-            }
-          },
-          {
-            "name": "Backup",
-            "type": "Microsoft.Common.DropDown",
-            "label": "Backup",
-            "toolTip": "",
-
             "defaultValue": "Yes",
             "constraints": {
               "allowedValues": [
