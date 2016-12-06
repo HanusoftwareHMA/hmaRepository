@@ -33,9 +33,10 @@
             "toolTip": "Enter Customer Full Name.",
             "defaultValue": "",
             "constraints": {
-              "required": false,
-              "regex": "^([a-zA-Z]+,?\\s*){1,61}[a-zA-Z]$",
+              "required": true,
+              "regex": "/^, [ \\s\\S ],{ 4,138},$/",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+
             }
           },
           {
