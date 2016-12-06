@@ -34,7 +34,7 @@
             "defaultValue": "",
             "constraints": {
               "required": true,
-              "maxLength": 5
+              "regex": "^[a-z]{1,9}[a-z]$"
             }
           },
           {
