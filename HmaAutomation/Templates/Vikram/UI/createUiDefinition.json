@@ -33,10 +33,7 @@
             "toolTip": "Enter Customer Full Name.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
-              "regex": "^.{0,150}$",
-              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
-
+              "required": true
             }
           },
           {
