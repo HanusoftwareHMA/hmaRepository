@@ -12,7 +12,7 @@
         "constraints": {
           "required": true,
           "regex": "^([a-z0-9A-Z0-9-]+,)*[a-z0-9A-Z0-9-]+$",
-          "validationMessage": "Enter VM Names In Correct Format. Ex: VM1,VM2,VM3"
+          "validationMessage": "VM name should be alpha-numeric.Multiple VM allow with Comma seperated only."
         }
       }
 
@@ -31,11 +31,12 @@
             "name": "CustomerName",
             "type": "Microsoft.Common.TextBox",
             "label": "Customer Name",
-            "toolTip": "Enter Customer Full Name.",
+            "toolTip": "Please Enter Customer Name.",
             "defaultValue": "",
             "constraints": {
-              "required": true
-             
+              "required": true,
+              "regex": "^[a-z0-9-]{0,48}[a-z0-9]$",
+              "validationMessage": "Customer should be alphanumeric and upto 50 characters long."
             }
           },
           {
@@ -45,7 +46,9 @@
             "toolTip": "Enter Company Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
             "defaultValue": "",
             "constraints": {
-              "required": true
+              "required": true,
+              "regex": "^[a-z][a-z0-9-]{0,48}[a-z0-9]$",
+              "validationMessage": "Company should be alphanumeric and upto 50 characters long."
             }
           },
           {
@@ -55,7 +58,7 @@
             "toolTip": "Enter your website full URL that is accessible",
             "defaultValue": "",
             "constraints": {
-               "required": false,
+              "required": false,
               "regex": "^http(s)?://([\\w-]+.)+[\\w-]+(/[\\w- ./?%&=])?$",
               "validationMessage": "Enter Website In Proper Format"
             }
@@ -80,18 +83,8 @@
             "defaultValue": "",
             "constraints": {
               "required": true,
-              "regex": "^[0-9-]{9,10}[0-9]$",
+              "regex": "^[0-9-]{1,9}[0-9]$",
               "validationMessage": "Please enter only integer number between [0-9]."
-            }
-          },
-          {
-            "name": "Address",
-            "type": "Microsoft.Common.TextBox",
-            "label": "Address",
-            "toolTip": "Enter Your Full Address.",
-            "defaultValue": "",
-            "constraints": {
-              "required": false 
             }
           },
           {
@@ -102,8 +95,19 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9-]{9,10}[0-9]$",
+              "regex": "^[0-9-]{1,9}[0-9]$",
               "validationMessage": "Please enter only integer number between [0-9]."
+            }
+          },
+          {
+            "name": "Address",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Address",
+            "toolTip": "Enter Your Full Address.",
+            "defaultValue": "",
+            "constraints": {
+              "required": false,
+              "validationMessage": "Please Enter Your Address."
             }
           },
           {
@@ -111,12 +115,12 @@
             "type": "Microsoft.Common.DropDown",
             "label": "Country",
             "toolTip": "Please Select your Country name.",
-            "defaultValue": "IN",
+            "defaultValue": "India",
             "constraints": {
               "allowedValues": [
                 {
                   "label": "India",
-                  "value": "IN"
+                  "value": "India"
                 },
                 {
                   "label": "USA",
@@ -128,13 +132,12 @@
           {
             "name": "Other",
             "type": "Microsoft.Common.TextBox",
-            "label": "Country",
+            "label": "Other",
             "toolTip": "Enter Your Country Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[a-z0-9]{1,50}[a-z0-9]$",
-              "validationMessage": "Number of alphanumeric characters Must Be Less Than 50 characters Long."
+              "validationMessage": "Please Enter Your Country Name."
             }
           },
           {
@@ -144,9 +147,9 @@
             "toolTip": "Enter Your State Name.",
             "defaultValue": "",
             "constraints": {
-             "required": false,
-             "regex": "^[.*]{1,50}[.*]$",
-             "validationMessage": "Number of alphanumeric characters Must Be Less Than 50 characters Long."
+              "required": false,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           },
           {
@@ -157,8 +160,8 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[.*]{1,50}[.*]$",
-              "validationMessage": "Number of alphanumeric characters Must Be Less Than 50 characters Long."
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           },
           {
@@ -169,8 +172,8 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9-]{5,8}[0-9]$",
-              "validationMessage": "Incorrect Zip Code. Please Enter Proper Code"
+              "regex": "^[0-9-]{1,9}[0-9]$",
+              "validationMessage": "Please enter only integer number between [0-9]."
             }
           },
           {
@@ -185,10 +188,8 @@
           }
         ]
       },
-
-
       {
-        "name": "Services",
+        "name": "HMAServices",
         "label": "HMA",
         "subLabel": {
           "preValidation": "Services",
@@ -202,7 +203,7 @@
             "label": "Backup",
             "toolTip": "",
 
-            "defaultValue": "Yes",
+            "defaultValue": "No",
             "constraints": {
               "allowedValues": [
                 {
@@ -226,7 +227,9 @@
               "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
-            }
+            },
+
+            "visible": "[equals('Yes',steps('HMAServices').Backup)]"
           },
           {
             "name": "Policy",
@@ -238,7 +241,8 @@
               "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
-            }
+            },
+            "visible": "[equals('Yes',steps('HMAServices').Backup)]"
           },
           {
             "name": "patch",
@@ -277,6 +281,7 @@
               ]
             }
           }
+
         ]
       }
 
@@ -290,8 +295,10 @@
       "webSiteName": "[steps('Customer').webSiteName]",
       "EmailID": "[steps('Customer').EmailID]",
       "ContactNo": "[steps('Customer').ContactNo]",
+      "AlternateNumber": "[steps('Customer').AlternateNumber]",
       "Address": "[steps('Customer').Address]",
       "Country": "[steps('Customer').Country]",
+      "other": "[steps('Customer').other]",
       "State": "[steps('Customer').State]",
       "City": "[steps('Customer').City]",
       "Zipcode": "[steps('Customer').Zipcode]",
