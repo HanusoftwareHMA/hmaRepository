@@ -34,7 +34,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^([a-z][a-z]+,?\\s*){1,61}[a-z]$",
+              "regex": "^([a-z]+,?\\s*){1,61}[A-Z]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           },
