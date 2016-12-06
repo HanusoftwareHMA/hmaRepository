@@ -34,7 +34,7 @@
             "defaultValue": "",
             "constraints": {
               "required": true,
-              "regex": "/^, [ \\s\\S ],{ 4,138},$/",
+              "regex": "^.{0,150}$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
 
             }
