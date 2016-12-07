@@ -22,7 +22,7 @@
         "name": "Customer",
         "label": "Customer",
         "subLabel": {
-          "preValidation": "Details",
+          "preValidation": "Information",
           "postValidation": "Done"
         },
         "bladeTitle": "Customer",
@@ -41,6 +41,7 @@
           },
           {
             "name": "CompanyName",
+
             "type": "Microsoft.Common.TextBox",
             "label": "Company Name",
             "toolTip": "Enter Company Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
