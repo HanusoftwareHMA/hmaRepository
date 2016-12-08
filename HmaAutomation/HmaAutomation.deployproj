@@ -40,6 +40,9 @@
     <None Include="Templates\Sanjeev\README.md" />
     <None Include="Templates\Vikram\azuredeploy.json" />
     <None Include="Templates\Vikram\azuredeploy.parameters.json" />
+    <None Include="Templates\Vikram\Latest\createUiDefinition.json" />
+    <None Include="Templates\Vikram\Latest\mainTemplate.json" />
+    <None Include="Templates\Vikram\Latest\README.md" />
     <None Include="Templates\Vikram\metadata.json" />
     <None Include="Templates\Vikram\README.md" />
     <None Include="Templates\Vikram\UI\createUiDefinition.json" />
