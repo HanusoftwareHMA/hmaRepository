@@ -35,9 +35,7 @@
             "defaultValue": "",
             "constraints": {
               "required": true
-              //  ,
-              //"regex": "^{0,48}$",
-              //"validationMessage": "Customer should be alphanumeric and upto 50 characters long."
+              
             }
           },
           {
