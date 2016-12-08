@@ -46,9 +46,7 @@
             "toolTip": "Enter Company Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
-              "regex": "^[a-z][a-z0-9-]{0,48}[a-z0-9]$",
-              "validationMessage": "Company should be alphanumeric and upto 50 characters long."
+              "required": true 
             }
           },
           {
