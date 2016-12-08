@@ -181,7 +181,7 @@
               "type": "ApiConnection",
               "inputs": {
                 "body": {
-                  "body": "[concat('<html><body>',variables('emailMessage'),'</body></html>']",
+                  "body": "[concat('<html><body>',variables('emailMessage'),'</body></html>')]",
                   "from": "[variables('emailFrom')]",
                   "ishtml": true,
                   "subject": "[variables('supportTicket')]",

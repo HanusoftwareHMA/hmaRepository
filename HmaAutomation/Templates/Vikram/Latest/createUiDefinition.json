@@ -233,7 +233,7 @@
             "name": "Policy",
             "type": "Microsoft.Common.TextBox",
             "label": "Policy Name",
-            "toolTip": "Enter Policy Name.",
+            "toolTip": "Enter Policy Name",
             "defaultValue": "",
             "constraints": {
               "required": false,
